@@ -57,7 +57,7 @@ export  class ServerExpress{
     private middlewares():void{
         this.app.use(morgan("dev")); // Mesaje por consola de las peticiones con estilo dev , puede mirar la documentacion de morgan para ver mas detalles
         this.app.use(express.json()); // Permite leer el body de las peticiones
-        this.app.use(bodyParser)
+        //this.app.use(bodyParser)
     }
     private configureSockets(): void {
         this.io.on('connection', (socket: Socket) => {
